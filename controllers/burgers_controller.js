@@ -1,6 +1,6 @@
 // Import Express
-var express = requier("express");
-var router = express.router();
+var express = require("express");
+var router = express.Router();
 
 // Import the burger model
 var burger = require("../models/burger.js");
