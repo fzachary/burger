@@ -1,5 +1,5 @@
 // Import the MySQL connection
-var connection = require("./connection");
+var connection = require("./connection.js");
 
 // Helper function for SQL syntax. If we want to pass 3 values into the MySQL query, we will need 3 question marks. This function will loop throught the data and create an array of question marks and then turn it into a string.
 function printQuestionMarks(num) {
