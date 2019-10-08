@@ -1,32 +1,61 @@
-<h1>EAT-DA-BURGER!!!</h1>
+<div class="jumbotron header-bg text-center">
+        <h1>EAT-DA-BURGER!!!</h1>
+        <br>
+            <h3>Where dreams come true, one big bite at a time.</h3>
+            <br>
+            <h5>Add burgers to your wishlist below.<br>When you eat a burger on your list, click on it and show the world that you have DEVOURED. DA. BURGER.
+            </h5>
+</div>
 
-<h2>Burgers I Want</h2>
-
-<ul>
-    {{#each burgers}}
-        {{#unless devoured}}
-        <li> {{ burger_name }} </li>
-        {{/unless}}
-    {{/each}}
-</ul>
-
-<h2>Devoured Burgers</h2>
-
-<ul>
-    {{#each burgers}}
-        {{#if devoured}}
-            <li> {{ burger_name }} </li>
-        {{/if}}
-    {{/each}}
-</ul>
-
-<h2>Add A Burger</h2>
-<form class="create-form">
-
-    <div class="form-group">
-        <label for="burger">Burger Name:</label>
-        <input type="text" id="burger" name="name">
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+        </div>
+        <div class="col-4">
+            <form class="create-form">
+                <div class="input-group mb-3">
+                    <input type="text" name="name" class="form-control" id="burg" placeholder="Add Your Burger Here!" aria-label="Add Your Burger" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-outline-warning" id="add-burger">
+                            <span class="fas fa-hamburger"></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-4">
+        </div>
     </div>
+    
+    <div class="row">
+        <div class="col-6 text-center">
+            <div class="card">
+                <h3 class="card-header text-center">Burgers I Want<br>(Click To Devour)</h3>
+                    <div class="card-body">
+                        <ul style="list-style-type: none;"> 
+                            {{#each burgers}}
+                                {{#unless devoured}}
+                                    {{> burgers/burger-block devoured=false}}
+                                {{/unless}}
+                            {{/each}}
+                        </ul>
+                    </div>
+            </div>
+        </div>
 
-    <button type="submit">ADD BURGER</button>
-</form>
+        <div class="col-6 text-center">
+            <div class="card">
+                <h3 class="card-header text-center">Devoured Burgers<br>(Click To Add Back To Wishlist)</h3>
+                <div class="card-body">
+                    <ul style="list-style-type: none;">
+                    {{#each burgers}}
+                        {{#if devoured}}
+                            {{> burgers/burger-block devoured=true}}
+                        {{/if}}
+                    {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
