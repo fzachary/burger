@@ -1,6 +1,6 @@
 {{#if devoured}}
 <li>
-    <h5> {{ burger_name }} <button type="button" class="redo-burger btn btn-outline-warning" data-id="{{id}}" data-name="{{burger_name}}">
+    <h5> {{ burger_name }} <button type="button" class="redo-burger btn" data-id="{{id}}" data-name="{{burger_name}}">
         <i class="fas fa-redo-alt"></i>
     </button>
     </h5>
@@ -9,7 +9,7 @@
 
 {{else}}
 <li>
-    <button type="btn" class="change-devoured btn btn-warning" data-id="{{id}}" data-name="{{burger_name}}"> {{ burger_name }} 
+    <button type="btn" class="change-devoured btn" data-id="{{id}}" data-name="{{burger_name}}"> {{ burger_name }} 
         <i class="fas fa-utensils"></i>
     </button>
 </li>

@@ -1,3 +1,61 @@
+body {
+  background-color: black;
+}
+
+.jumbotron {
+  background-image: url("/assets/img/background.jpg");
+  background-size: cover;
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Special Elite', cursive;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 40px;
+  font-family: 'Special Elite', cursive;
+  font-weight: bold;
+}
+
+h5 {
+  color: black;
+  text-shadow: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-header {
+  background: #F5D101;
+}
+
+.btn {
+  background: #F5D101;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.form-control {
+  font-family: 'Roboto', sans-serif;
+}
+
+::placeholder{
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn:hover {
+  background: goldenrod;
+}
+
+strong {
+  font-family: 'Special Elite', cursive;
+  font-weight: bold;
+  font-size: 35px;
+}
+
 button.submit {
     float: right;
   }

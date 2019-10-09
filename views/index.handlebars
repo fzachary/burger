@@ -1,38 +1,38 @@
-<div class="jumbotron header-bg text-center">
+<div class='jumbotron header-bg'>
         <h1>EAT-DA-BURGER!!!</h1>
         <br>
-            <h3>Where dreams come true, one big bite at a time.</h3>
+            <h3>Where dreams come true,<br>one BIG bite at a time.</h3>
             <br>
-            <h5>Add burgers to your wishlist below.<br>When you eat a burger on your list, click on it and show the world that you have DEVOURED. DA. BURGER.
+            <h5>Add burgers to your wishlist.<br>When you eat a burger on your list, click it.<br>Show the world that you<br><strong>DEVOURED. DA. BURGER.</strong>
             </h5>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-4">
+<div class='container'>
+    <div class='row'>
+        <div class='col-4'>
         </div>
-        <div class="col-4">
-            <form class="create-form">
-                <div class="input-group mb-3">
-                    <input type="text" name="name" class="form-control" id="burg" placeholder="Add Your Burger Here!" aria-label="Add Your Burger" aria-describedby="button-addon2">
-                    <div class="input-group-append">
-                        <button type="submit" class="btn btn-outline-warning" id="add-burger">
-                            <span class="fas fa-hamburger"></span>
+        <div class='col-4'>
+            <form class='create-form'>
+                <div class='input-group mb-3'>
+                    <input type='text' name='name' class='form-control' id='burg' placeholder='Add Your Burger Here!' aria-label='Add Your Burger' aria-describedby='button-addon2'>
+                    <div class='input-group-append'>
+                        <button type='submit' class='btn' id='add-burger'>
+                            <span class='fas fa-hamburger'></span>
                         </button>
                     </div>
                 </div>
             </form>
         </div>
-        <div class="col-4">
+        <div class='col-4'>
         </div>
     </div>
     
-    <div class="row">
-        <div class="col-6 text-center">
-            <div class="card">
-                <h3 class="card-header text-center">Burgers I Want<br>(Click To Devour)</h3>
-                    <div class="card-body">
-                        <ul style="list-style-type: none;"> 
+    <div class='row'>
+        <div class='col-6 text-center'>
+            <div class='card'>
+                <h3 class='card-header text-center'>Burgers I Want<br>(Click To Devour)</h3>
+                    <div class='card-body'>
+                        <ul style='list-style-type: none;'> 
                             {{#each burgers}}
                                 {{#unless devoured}}
                                     {{> burgers/burger-block devoured=false}}
@@ -43,11 +43,11 @@
             </div>
         </div>
 
-        <div class="col-6 text-center">
-            <div class="card">
-                <h3 class="card-header text-center">Devoured Burgers<br>(Click To Add Back To Wishlist)</h3>
-                <div class="card-body">
-                    <ul style="list-style-type: none;">
+        <div class='col-6 text-center'>
+            <div class='card'>
+                <h3 class='card-header text-center'>Devoured Burgers<br>(Click To Add Again)</h3>
+                <div class='card-body'>
+                    <ul style='list-style-type: none;'>
                     {{#each burgers}}
                         {{#if devoured}}
                             {{> burgers/burger-block devoured=true}}
