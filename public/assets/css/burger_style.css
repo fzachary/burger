@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: dimgrey;
 }
 
 .jumbotron {
@@ -28,8 +28,13 @@ h5 {
   font-weight: bold;
 }
 
+.card {
+  border: none;
+}
+
 .card-header {
   background: #F5D101;
+  border: none;
 }
 
 .btn {
@@ -50,6 +55,10 @@ h5 {
   background: goldenrod;
 }
 
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
 strong {
   font-family: 'Special Elite', cursive;
   font-weight: bold;
@@ -58,5 +67,13 @@ strong {
 
 .footer {
   font-family: 'Roboto', sans-serif;
-  color: #F5D101;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
 }
