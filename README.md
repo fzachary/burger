@@ -12,7 +12,7 @@ ___
 
 ## Demo
 
-To use Eat-Da-Burger!!! navigate to the depolyed Heroku page [here](#). Simply add burgers using the input form in the middle of the page to populate your burger wishlist.
+To use Eat-Da-Burger!!! navigate to the depolyed Heroku page [here](https://limitless-waters-95268.herokuapp.com/). Simply add burgers using the input form in the middle of the page to populate your burger wishlist.
 
 ___
 
